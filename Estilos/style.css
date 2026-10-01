@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    color: #333333; 
+    background-color: rgb(245, 244, 244);
+    line-height: 1.6;
+}
+
+.titulo {
+    font-size: 36px;
+    color: #f7f7f7;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px;
+}
+
+.subtitulos {
+    font-size: 24px;
+    color: #ed8936;                    
+    text-transform: uppercase;           
+    letter-spacing: 0.5px;
+    border-bottom: 3px dashed #0b5eb1;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+
+header {
+    background: url('/Img/textura.jpg');
+    color: rgb(196, 30, 30);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navegacion-principal .menu-padre {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion-principal .menu-padre > a {
+    display: block;
+    padding: 10px 20px;
+    color: #1a365d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.submenu li a {
+    color: rgb(255, 255, 255);
+    top: 100%;
+    left: 0;
+    background-color: #1a365d;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+a {
+    color: #3182ce;
+    text-decoration: none;
+    display: inline;
+}
+
+a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid #ed8936;
+}
+
+a:active {
+    color: #1a365d !important;
+}
+
+.lista-romana {
+    list-style-type: upper-roman;
+    padding-left: 25px;
+}
+
+
+.contenido-principal p {
+    margin-bottom: 15px;
+}
+
+.contenido-principal > article {
+    border: 1px solid #cbd5e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+#introduccion-lista + ol {
+    border: 1px solid #ed8936;
+    background-color: #fffaf0;
+    padding: 25px;
+}
+
+.subtitulos ~ #nota {
+    color: #718096;
+    font-size: 14px;
+}
+
+.lista-romana li:first-child {
+    font-weight: bold;
+    color: #e53e3e;
+}
+.lista-romana li:nth-child(2) {
+    color: #3182ce;
+}
+.lista-romana li:not(:first-child) {
+    letter-spacing: 0.5px;
+}
+
+.cita{
+    margin: 5px;
+    content: "“ ";
+    font-size: 26px;
+    color: #ed8936;
+    font-weight: bold;
+}
+
+
+.figura {
+   width: 240px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #cbd5e0;
+    background-color: #f7fafc;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.figura img {
+   display: block;
+    margin: 10px auto 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.tabla {
+    width: 100%;
+    overflow-x: auto; 
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #cbd5e0;
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid #1a365d;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.boton-formulario {
+    background-color: #ed8936;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;    
+}
+
+
+.contenido-principal article > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.contenido-principal + aside {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.ancla {
+    scroll-margin-top: 15px;
+}
+
+.iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1a365d;
+    color: white;
+    margin-top: 30px;
+}
